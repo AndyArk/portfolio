@@ -1,0 +1,79 @@
+<script src="jquery-1.10.2.min.js"></script>
+<script src="superstition3.1.js"></script>
+<script src="post_results.php"></script>
+
+<link rel=stylesheet href="style.css" type="text/css" media="screen">
+
+<head>
+    <title>Choice experiment</title>
+</head>
+
+<div id="experiment">
+
+    <div id="title"> <h3>Choice experiment</h3> </div>
+
+    <div id="Instructions">
+        The following game will last 8 minutes, beginning with a practice session of 5 trials.<br><br>
+        You will be presented with two symbols to choose between. After choosing, you will either receive a reward of $0.50 or nothing from the chosen symbol. <br>
+        <b><br>IMPORTANT:<br>The different symbols are not equivalent in terms of outcome: with some you are more likely to win than with others. <br>However, no symbol makes you win on every trial.</b><br><br>
+        - to choose the leftmost symbol, press the LEFT arrow key<br>
+        - to choose the rightmost symbol, press the RIGHT arrow key<br><br>
+
+        To have a chance to win, you MUST make a choice and press one of the two buttons.<br>
+        Excluding the practice session, you will be allowed to keep the money you have won. <br><br>
+
+        Press space to begin the practice trials.
+    </div>
+
+    <div id = question>
+        <p><img src = "resources/symbol1.png" alt = "Example" width = 256vmin height = 256vmin id = 'guess'></p>
+        <form action="/db-connect.php" method = 'Post'>
+            <input type="text" name="guess">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class = 'container'>
+        <div class = "rewards">
+            <div id = "image_minus">
+                <p><img src = "resources/minus_coin.png" alt = "Subtracting Money" width = "256" height = "256"><br></p>
+                <div style="text-align:center;font-size:24px;">
+                    <p>+$0.0</p>
+                </div>
+            </div>
+
+
+
+            <div id = "image_plus">
+                <p><img src = "resources/plus_coin.png" alt = "Adding Money" width = "256" height = "256"></p>
+                <div style="text-align:center;font-size:24px;">
+                    <p>+$0.5</p>
+                </div>
+            </div>
+            </div>
+            <div id = "neutral">
+                <img src = "resources/cross.png" alt = "Cross" width = 256vmin height = 256vmin>
+            </div>
+            <div class="row">
+                <img src = "resources/symbol1.png" alt = 'Symbol1' width = 256vmin height=256vmin id="SymbolLeft">
+                <img src = "resources/cross.png" alt = "Cross" width = 256vmin height = 256vmin>
+                <img src = "resources/symbol2.png" alt = 'Symbol2' width = 256vmin height=256vmin id="SymbolRight">
+            </div>
+        <div id = 'confirmation'>
+            <img src = 'resources/confirmation.png' alt = 'Confirmation' width = 64px height = 64px>
+        </div>
+    </div>
+
+
+</div>
+
+<body>
+<noscript>
+    <h1>Warning: Javascript seems to be disabled</h1>
+    <p>This website requires that Javascript be enabled on your browser.</p>
+    <p>Instructions for enabling Javascript in your browser can be found <a
+            href="http://support.google.com/bin/answer.py?hl=en&answer=23852">here</a><p>
+</noscript>
+</body>
+
+</div>

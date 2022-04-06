@@ -1,0 +1,117 @@
+#experiment {
+	font-family: Arial, Helvetica;
+	width: auto;
+}
+
+body{
+	background-color: dimgrey;
+}
+
+#Instructions {
+	font-family: Arial, Helvetica;
+    font-size: large;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#title {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 30;
+	text-align: center;
+	position: relative;
+    color: whitesmoke;
+}
+
+.displays {
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 0px;
+}
+
+#startExperiment {
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 14pt;
+}
+
+#startGame {
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 14pt;
+}
+
+#endExperiment {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	font-size: 14pt;
+}
+
+div.container{
+	width: max-content;
+	margin: auto;
+	top: 50%;
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
+
+}
+
+div.row{
+    display: flex;
+    justify-content: center;
+    resize: both;
+}
+
+
+#neutral{
+    display: flex;
+    justify-content: center;
+    resize: both;
+    vertical-align: center;
+}
+
+div.rewards{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image_minus {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#image_plus {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#confirmation{
+	display: flex;
+	float: left;
+	margin-left: 96px;
+	margin-right: 96px;
+	margin-top: 10px;
+}
+
+#question{
+    display: block;
+	text-align: center;
+}
+
+#guess{
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+    padding-top: 10px;
+}
